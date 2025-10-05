@@ -103,26 +103,7 @@ For my MSc thesis (starting September 2026), I'm developing **reinforcement lear
 
 **Hypothesis:** Agents that learn to delay/split trades during high-MEV conditions should reduce execution costs and improve drawdown profile without sacrificing returns.
 
-## Code & Reproducibility
-
-**Analysis notebook:** `analysis.ipynb`  
-**Data generation:** Synthetic calibration to observed MEV patterns  
-**Tools:** Python (pandas, matplotlib, seaborn, numpy)
-
-Full code available in this repository. Data and calibration details available upon request.
-
-## Limitations
-
-- **Synthetic data:** Stylized simulation, not live chain data
-- **Simplified MEV model:** Focuses on sandwiches, excludes other MEV types (frontrunning, backrunning, liquidations)
-- **Single DEX:** Uniswap v2 only, doesn't capture cross-DEX dynamics or aggregator routing
-- **Static liquidity:** Assumes pool depth distributions, doesn't model dynamic LP behavior
-
-These simplifications are appropriate for demonstrating the problem's magnitude. The thesis will incorporate more realistic dynamics.
-
 ## Contact
-
-Working on MEV, DeFi execution, or portfolio optimization? Let's connect:
 
 - **Email:** lucas.kemper01@gmail.com
 - **Twitter:** [@lucaskemperrr](https://twitter.com/lucaskemperrr)
