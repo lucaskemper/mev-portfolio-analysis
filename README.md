@@ -111,4 +111,4 @@ For my MSc thesis (starting September 2026), I'm developing **reinforcement lear
 
 ---
 
-*Preliminary analysis conducted November 2025 ahead of MSc thesis research. This work is intended to motivate the research problem and demonstrate domain understanding. Formal thesis work begins September 2026.*
+*Preliminary analysis conducted October 2025 ahead of MSc thesis research. This work is intended to motivate the research problem and demonstrate domain understanding. Formal thesis work begins September 2026.*
