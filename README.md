@@ -106,7 +106,7 @@ For my MSc thesis (starting September 2026), I'm developing **reinforcement lear
 ## Contact
 
 - **Email:** lucas.kemper01@gmail.com
-- **Twitter:** [@lucaskemperrr](https://twitter.com/lucaskemperrr)
+- **X:** [@lucaskemperrr](https://twitter.com/lucaskemperrr)
 - **LinkedIn:** [lucaskemper](https://linkedin.com/in/lucaskemper)
 
 ---
