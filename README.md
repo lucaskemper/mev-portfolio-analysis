@@ -76,3 +76,58 @@ This drag erodes risk-adjusted returns and increases realized drawdowns during s
 ## Implications for Portfolio Management
 
 Traditional portfolio optimization assumes:
+Total Cost = Base Slippage + Fixed Fee
+
+Reality in DeFi:
+Total Cost = f(gas_regime, pool_depth, MEV_risk, volatility)
+
+Where MEV risk is **adversarial and adaptive**—bots monitor the mempool and attack when profitable.
+
+**Consequences:**
+1. Static rebalancing schedules overpay during high-gas periods
+2. Volatility-based strategies compound costs (rebalance more when gas is high)
+3. Tail risk (max drawdown, ES) is underestimated by models that ignore execution uncertainty
+
+## Next Steps: MEV-Aware Portfolio Optimization
+
+For my MSc thesis (starting September 2026), I'm developing **reinforcement learning agents** that optimize portfolio execution under MEV conditions:
+
+**Research Question:**
+> Can RL policies that observe gas regimes and mempool conditions achieve better risk-adjusted performance (lower ES/max drawdown, similar Sharpe) than MEV-blind strategies?
+
+**Approach:**
+- Simulate AMM environment (Uniswap v2) with MEV injection
+- Train PPO/DQN agents with state features: returns, volatility, gas regime, pending transaction flow
+- Reward function penalizes slippage and tail risk
+- Compare vs baselines: naive rebalancing, vol-targeting, MEV-blind RL
+
+**Hypothesis:** Agents that learn to delay/split trades during high-MEV conditions should reduce execution costs and improve drawdown profile without sacrificing returns.
+
+## Code & Reproducibility
+
+**Analysis notebook:** `analysis.ipynb`  
+**Data generation:** Synthetic calibration to observed MEV patterns  
+**Tools:** Python (pandas, matplotlib, seaborn, numpy)
+
+Full code available in this repository. Data and calibration details available upon request.
+
+## Limitations
+
+- **Synthetic data:** Stylized simulation, not live chain data
+- **Simplified MEV model:** Focuses on sandwiches, excludes other MEV types (frontrunning, backrunning, liquidations)
+- **Single DEX:** Uniswap v2 only, doesn't capture cross-DEX dynamics or aggregator routing
+- **Static liquidity:** Assumes pool depth distributions, doesn't model dynamic LP behavior
+
+These simplifications are appropriate for demonstrating the problem's magnitude. The thesis will incorporate more realistic dynamics.
+
+## Contact
+
+Working on MEV, DeFi execution, or portfolio optimization? Let's connect:
+
+- **Email:** lucas.kemper01@gmail.com
+- **Twitter:** [@lucaskemperrr](https://twitter.com/lucaskemperrr)
+- **LinkedIn:** [lucaskemper](https://linkedin.com/in/lucaskemper)
+
+---
+
+*Preliminary analysis conducted November 2025 ahead of MSc thesis research. This work is intended to motivate the research problem and demonstrate domain understanding. Formal thesis work begins September 2026.*
