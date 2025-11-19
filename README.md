@@ -187,9 +187,4 @@ r_t = PnL_t - λ * slippage_t - μ * tail_risk_t
 # 9. Contact
 
 - **Email:** lucas.kemper01@gmail.com  
-- **X:** https://twitter.com/lucaskemperrr  
 - **LinkedIn:** https://linkedin.com/in/lucaskemper  
-
----
-
-*Preliminary analysis completed October 2025. Full thesis begins September 2026.*
