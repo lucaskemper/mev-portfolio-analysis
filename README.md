@@ -10,7 +10,7 @@ Result: Portfolio strategies that ignore MEV conditions systematically overpay f
 
 ## Methodology
 
-- **Dataset:** 10,000 simulated Uniswap blocks calibrated to observed MEV patterns (Jan-Mar 2024)
+- **Dataset:** 10,000 simulated Uniswap blocks calibrated to observed MEV patterns (Jan-Mar 2025)
 - **Regimes:** Gas-based classification (Low/Medium/High) using tertile splits
 - **MEV Detection:** Sandwich attack labeling based on gas conditions and transaction patterns
 - **Metrics:** Slippage (basis points), sandwich frequency, regime-dependent cost multipliers
